@@ -1,0 +1,19 @@
+{
+  "name": "react-responsive-props",
+  "version": "0.0.1",
+  "description": "Responsive props in React",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singmyr/react-responsive-props.git"
+  },
+  "author": "singmyr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/singmyr/react-responsive-props/issues"
+  },
+  "homepage": "https://github.com/singmyr/react-responsive-props#readme"
+}
