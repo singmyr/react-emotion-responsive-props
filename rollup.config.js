@@ -28,26 +28,30 @@ export default {
     resolve({
       browser: true,
     }),
+    babel({
+        babelrc: true,
+        // Check if we need anything from babel-preset-stage-x
+      //   presets: [/* ['es2015', { modules: false }],  *//* 'stage-1',  */'@babel/preset-react'],
+      //   plugins: [],
+      }),
     commonjs({
       include: [
         'node_modules/react',
-        'node_modules/prop-types'
+        // 'node_modules/prop-types'
       ],
       exclude: [
-        'node_modules/process-es6/**',
+        // 'node_modules/process-es6/**',
       ],
       namedExports: {
         // 'node_modules/react/index.js': ['createElement'],
         // 'node_modules/react-dom/index.js': ['render'],
       },
     }),
-    babel({
-      babelrc: true,
-      // Check if we need anything from babel-preset-stage-x
-    //   presets: [/* ['es2015', { modules: false }],  *//* 'stage-1',  */'@babel/preset-react'],
-    //   plugins: [],
+    uglify({
+        compress: {
+            drop_console: true,
+        }
     }),
-    uglify(),
     // visualizer(),
     // filesize(),
     /* replace({
