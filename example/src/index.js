@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { ThemeProvider } from 'emotion-theming';
+import theme from './theme';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+    <ThemeProvider theme={theme}>
+        <App prop1={[1,2,3]} prop2={[4,5,6]} />
+    </ThemeProvider>, document.getElementById('root'));

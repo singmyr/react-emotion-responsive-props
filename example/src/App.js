@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import { withTheme } from 'emotion-theming';
+// import theme from './theme';
+import withResponsiveProps from 'react-responsive-props';
 
 class App extends Component {
   render() {
@@ -25,4 +28,5 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withResponsiveProps(['prop1', 'prop2'])(App);
+// export default App;
