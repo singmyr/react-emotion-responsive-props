@@ -19,8 +19,8 @@
   "homepage": "https://github.com/singmyr/react-responsive-props#readme",
   "dependencies": {
     "emotion-theming": "^9.2.9",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
